@@ -212,15 +212,15 @@ const TaskManager: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-indigo-900 via-slate-800 to-purple-700 px-4 py-8">
+    <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-white via-purple-300 to-purple-700 px-4 py-8">
       <div className="flex justify-center my-6 font-mono">
         <RainbowButton>Manage. Prioritize. Conquer.</RainbowButton>
       </div>
 
-      <div className="bg-white/90 backdrop-blur-sm p-6 rounded-xl shadow-lg w-full max-w-7xl mb-6">
+      <div className="bg-slate-300 backdrop-blur-sm p-6 border-black border-4 rounded-xl shadow-lg w-full max-w-7xl mb-6">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div className="space-y-2">
-            <label htmlFor="filter-status" className="block text-sm font-medium text-gray-700">Filter by Status</label>
+            <label htmlFor="filter-status" className="block text-sm font-medium text-black">Filter by Status</label>
             <select
               id="filter-status"
               value={filterStatus}
@@ -235,7 +235,7 @@ const TaskManager: React.FC = () => {
           </div>
 
           <div className="space-y-2">
-            <label htmlFor="sort-criteria" className="block text-sm font-medium text-gray-700">Sort by</label>
+            <label htmlFor="sort-criteria" className="block text-sm font-medium text-black">Sort by</label>
             <select
               id="sort-criteria"
               value={sortCriteria}
@@ -255,7 +255,7 @@ const TaskManager: React.FC = () => {
         {columns.map(({ id, title, bg, border, headerBg, hoverBg }) => (
           <div
             key={id}
-            className={`bg-white/90 backdrop-blur-sm shadow-2xl rounded-xl overflow-hidden transition-all duration-300 ${isDragging ? 'ring-2 ring-offset-2 ring-indigo-400' : ''}`}
+            className={`bg-white/90 backdrop-blur-sm shadow-2xl border-black border-4 rounded-xl overflow-hidden transition-all duration-300 ${isDragging ? 'ring-2 ring-offset-2 ring-indigo-400' : ''}`}
             onDragOver={handleDragOver}
             onDrop={(e) => handleDrop(e, id)}
           >

@@ -19,12 +19,13 @@ const LandingPage: React.FC = () => {
     {
       title: "Organize Tasks",
       description: "Easily categorize your tasks into Not Started, In Progress, and Completed.",
-      icon: <CheckCircle className="text-green-600 text-4xl" />,
+      icon: <CheckCircle className="text-green-700 text-4xl" />,
+      
     },
     {
       title: "Track Progress",
       description: "Monitor your productivity with visual task boards.",
-      icon: <Schedule className="text-yellow-600 text-4xl" />,
+      icon: <Schedule className="text-amber-600 text-4xl" />,
     },
     {
       title: "Drag & Drop",
@@ -63,8 +64,8 @@ const LandingPage: React.FC = () => {
               paddingY: "12px",
               fontSize: "1.125rem",
               borderRadius: "8px",
-              border: "2px solid rgb(22, 163, 74)",
-              boxShadow: "0px 4px 6px rgba(0,0,0,0.1)",
+              border: "2px solid rgb(255,255,255)",
+              boxShadow: "0px 8px 16px rgba(171, 235, 183, 0.5)"
             }}
           >
             Try It Out
@@ -79,7 +80,17 @@ const LandingPage: React.FC = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-5">
             {features.map((feature, index) => (
-              <Paper key={index} elevation={4} className="p-6 transition-transform duration-300 hover:scale-105 border-black border-4 rounded-lg">
+              <Paper key={index} 
+              elevation={4} 
+              // className="p-6 transition-transform duration-300 hover:scale-105 border-black border-4 rounded-lg"
+              sx={{
+                background: "linear-gradient(to right bottom, #6de3a2, #dbc42e)", // Gradient background
+                border: "4px solid black",
+                borderRadius: "0.75rem",
+                padding: "2.5rem",
+              boxShadow: "0px 6px 12px rgba(253, 235, 172, 0.4)",
+              }}
+            >
                 <Box className="flex flex-col items-center text-center">
                   <Box className="mb-4">{feature.icon}</Box>
                   <Typography variant="h5" className="mb-2 font-bold">
