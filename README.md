@@ -19,7 +19,7 @@ This project is a task management application built using React. It allows users
 * **React.js:** JavaScript library for building user interfaces.
 * **React Hooks:** For efficient state management and side effects.
 * **Material UI:** React UI framework for consistent and responsive design.
-* **(Optional) Redux:** For more complex state management if needed.
+* **Redux:** For more complex state management if needed.
 * **localStorage:** For simple data persistence.
 
 ## Getting Started
