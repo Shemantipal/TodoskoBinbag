@@ -125,36 +125,17 @@ This project is a task management application built using React. It allows users
 
 * **State Management:** React hooks like `useState` and `useEffect` are used for managing component state. For larger applications, Redux can be implemented.
 * **Data Persistence:** `localStorage` is used to store and retrieve task data, ensuring that tasks are preserved across browser sessions.
-* **Drag and Drop:** The `react-beautiful-dnd` library can be used for implementing drag and drop functionality.
+* **Drag and Drop:** The `react-beautiful-dnd` library is used for implementing drag and drop functionality.
 * **Responsive Design:** Material UI's grid system and responsive components are used to ensure the application works well on different screen sizes.
 * **Filtering and Sorting:** Filter options are implemented using state variables and conditional rendering. Sorting is implemented using array sorting methods.
 * **Date Handling:** Utility functions are used for formatting and manipulating dates.
 
-## Evaluation Criteria
-
-* **Component Organization and State Management:**
-    * Components are well-organized and reusable.
-    * State management is efficient and follows best practices.
-    * React hooks are used effectively.
-    * (Optional) Redux is correctly implemented.
-* **User Interface and Experience:**
-    * The application is intuitive and easy to use.
-    * The UI is clean and visually appealing.
-    * User interactions are smooth and responsive.
-* **Responsive Design Implementation:**
-    * The application adapts well to different screen sizes.
-    * Material UI's responsive features are utilized effectively.
-    * The Application is usable on mobile devices.
 
 ## Future Improvements
 
 * Implement user authentication.
-* Add ability to assign tasks to users.
 * Integrate with a backend API for persistent data storage.
-* Add task categories and tags.
 * Implement task reminders and notifications.
-* Add more filter and sort options.
-* Add unit and integration tests.
-* Implement more detailed date and time pickers.
+
 
 
