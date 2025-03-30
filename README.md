@@ -114,34 +114,6 @@ This project is a task management application built using React. It allows users
 
 5.  **Open your browser and navigate to `http://localhost:3000`**
 
-## Project Structure
-
-task-management-app/
-├── public/
-│   └── index.html
-│   └── ...
-├── src/
-│   ├── components/
-│   │   ├── TaskList.js
-│   │   ├── TaskForm.js
-│   │   ├── TaskItem.js
-│   │   ├── FilterOptions.js
-│   │   ├── SortOptions.js
-│   │   ├── ...
-│   ├── App.js
-│   ├── index.js
-│   ├── hooks/
-│   │   ├── useLocalStorage.js
-│   │   ├── ...
-│   ├── styles/
-│   │   ├── App.css
-│   │   ├── ...
-│   └── utils/
-│       ├── dateUtils.js
-│       ├── ...
-├── package.json
-├── README.md
-└── ...
 
 
 * `components/`: Contains reusable React components.
